@@ -17,6 +17,7 @@ import storage from "redux-persist/lib/storage";
 import App from "./App";
 import "./index.css";
 import authReducer from "./state";
+import NavBar from "scenes/navbar";
 
 const persistConfig = { key: "root", storage, version: 1 };
 const persistedReducer = persistReducer(persistConfig, authReducer);
